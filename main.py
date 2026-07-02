@@ -1,4 +1,6 @@
 from fastapi import FastAPI
+from models.item import Item
+
 
 app = FastAPI()
 
@@ -18,3 +20,8 @@ def read_item(skip: int = 0, limit: int = 10):
 @app.get("/items/{item_id}")
 def read_item(item_id: int):
    return {"item_id": item_id}
+
+
+@app.post("/items/")
+def create_item(item: Item):
+   return item
