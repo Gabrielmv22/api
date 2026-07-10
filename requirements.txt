@@ -1,1 +1,5 @@
 fastapi[standard]
+fastapi[standard]==<VERSION_ESTABLE_DE_FASTAPI>
+pydantic==<VERSION_ESTABLE_DE_PYDANTIC>
+python-dotenv==<VERSION_ESTABLE_DE_PYTHON_DOTENV>
+supabase==<VERSION_ESTABLE_DE_SUPABASE>
